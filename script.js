@@ -77,4 +77,12 @@ function generatecv() {
     str1 += `<li> ${e.value} </li>`
   }
   document.getElementById("aqT").innerHTML = str1
+
+  document.getElementById("cv-form").style.display = "none"
+  document.getElementById("cv-template").style.display = "block"
+}
+
+//print cv
+function printcv() {
+  window.print()
 }

@@ -1,6 +1,10 @@
-/* #cv-form {
+#cv-form {
+  /* display: none; */
+}
+#cv-template {
   display: none;
-} */
+}
+
 .myimg {
   border: red;
   border-radius: 50%;
