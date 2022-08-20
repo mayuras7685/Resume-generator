@@ -15,7 +15,7 @@ function addNewWEField() {
 function addNewAQField() {
   let newNode = document.createElement("textarea")
   newNode.classList.add("form-control")
-  newNode.classList.add("aqField")
+  newNode.classList.add("AqField")
   newNode.classList.add("mt-2")
   newNode.setAttribute("rows", 2)
   newNode.setAttribute("placeholder", "Enter here")
@@ -67,4 +67,14 @@ function generatecv() {
     str = str + `<li> ${e.value} </li>`
   }
   document.getElementById("weT").innerHTML = str
+
+  //aq
+  let aqs = document.getElementsByClassName("AqField")
+
+  let str1 = ""
+
+  for (let e of aqs) {
+    str1 += `<li> ${e.value} </li>`
+  }
+  document.getElementById("aqT").innerHTML = str1
 }
